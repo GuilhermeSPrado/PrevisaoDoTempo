@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-image:url(imagemFundo/natureza.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+#main-content{
+    margin-top: 2.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);;
+    overflow: hidden;
+    padding: 2.5rem;
+    border-radius: .5rem;
+    border: 1px solid #B9B4C7;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#search-content{
+    display: flex;
+    justify-content: 1;
+}
+#search-content #search-input{
+    background: none;
+    border:none;
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.486);
+}
+#search-content #search-input::placeholder{
+    color: white;
+    font-weight: bolder;
+    opacity: .6;
+}
+#search-input:focus{
+    outline: none;
+}
+#search-content, #search-input,#submit{
+    color:#FFF5E0
+}
+#time-description{
+    margin: 2.5rem;
+    height:50%;
+    width: 70%;
+    text-align: center;
+}
+#time-description #result{
+    margin-top: .5rem;
+}
+#time-description #image{
+    width: 5rem;
+}
+#submit{
+    background-color: #C70039;
+    transition: .5s ease-in-out;
+    border: none;
+    padding: .3rem;
+    border-radius: .5rem;
+}
+#submit:hover{
+    background-color: #C70160;
+    cursor: pointer;
+}
+/*Media Query */
+@media screen and (max-width: 450px) {
+    #main-content{
+        padding: .5rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    body{
+        font-size: 2.5rem;
+    }
+    #main-content{
+        padding: 5rem;
+    }
+    #search-input{
+        padding: .5rem;
+        text-align: center;
+        font-size: 2.0rem;
+        margin-right: 1.5rem;
+    }
+    #search-input::placeholder{
+        font-size: 1.8rem;
+    }
+    #result{
+        font-size: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 2500px) {
+    body{
+        font-size: 5rem;
+    }
+    #main-content{
+        padding: 10rem;
+    }
+    #search-input{
+        padding: 2rem;
+        font-size: 6rem;
+    }
+    #search-input::placeholder{
+        font-size:3.6rem;
+    }
+    #submit{
+        padding: 1.5rem;
+        font-size: 3rem;
+    }
+    #result{
+        font-size: 3rem;
+    }
+  }
