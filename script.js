@@ -1,4 +1,4 @@
-const apiKey = '58dd031c91c42caa95c0e47f038421c1';
+const apiKey = '#';
 const button=document.querySelector('#submit')
 const input = document.querySelector('#search-input');
 const result = document.querySelector('#result');
